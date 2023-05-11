@@ -25,6 +25,7 @@ export default function Home() {
       </Head>
       <Script
         src='https://www.googletagmanager.com/gtag/js?id=G-J2BTZ54QZD'
+        strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
