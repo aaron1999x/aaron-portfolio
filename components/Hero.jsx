@@ -27,7 +27,7 @@ const Hero = () => {
             <SocialIcon icon={<FaLinkedin className='w-7 h-7 lg:w-8 lg:h-8' href='https://www.linkedin.com/in/yee-sing-tan-358546178/'/>} />
             <SocialIcon icon={<FaTwitter className='w-7 h-7 lg:w-8 lg:h-8' href='https://twitter.com/aarontanyeesing'/>} />
           </div>
-          <Link href='./ResumeMalaysia.pdf' target='_blank'>
+          <Link href='./ResumeMalaysia.pdf' target='_blank' className='hover:animate-pulse'>
             <div className='flex items-center gap-2 bg-buttonLight text-buttonTextLight dark:bg-buttonDark dark:text-buttonTextDark p-2 rounded-lg'>
               <FaFileDownload/>
               Resume
