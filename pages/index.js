@@ -20,19 +20,21 @@ export default function Home() {
     <>
       <Head>
        {/* Google tag (gtag.js)  */}
-      <Script src='https://www.googletagmanager.com/gtag/js?id=G-J2BTZ54QZD'/>
-      <Script>
+        <title>Aaron&apos;s Portfolio</title>
+        <meta name="description" content="Hey I&apos;m Aaron, Learn more about what i do" />
+      </Head>
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-J2BTZ54QZD'
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-  
+
           gtag('config', 'G-J2BTZ54QZD');
         `}
       </Script>
-        <title>Aaron&apos;s Portfolio</title>
-        <meta name="description" content="Hey I&apos;m Aaron, Learn more about what i do" />
-      </Head>
       <main
         className={`${inter.className} ${calSans.variable}`}
       >
