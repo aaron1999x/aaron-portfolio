@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import About from '@/components/About'
 import FooterCredit from '@/components/FooterCredit'
 import Script from 'next/script'
+import MetaHead from '@/components/MetaHead'
 
 const inter = Inter({ subsets: ['latin'] })
 const calSans = localFont({
@@ -18,11 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-       {/* Google tag (gtag.js)  */}
-        <title>Aaron&apos;s Portfolio</title>
-        <meta name="description" content="Hey I&apos;m Aaron, Learn more about what i do" />
-      </Head>
+      <MetaHead />
       <Script
         src='https://www.googletagmanager.com/gtag/js?id=G-J2BTZ54QZD'
         strategy="afterInteractive"
@@ -45,7 +42,7 @@ export default function Home() {
 
       <FooterCredit />
       </main>
-    </>
+    </meta>
     
   )
 }
