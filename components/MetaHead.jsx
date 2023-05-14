@@ -6,7 +6,6 @@ const MetaHead = () => {
     <Head>
       <title>Aaron&apos;s Portfolio</title>
       {/* <!-- Primary Meta Tags --> */}
-      <title>Aaron&apos;s Portfolio</title>
       <meta name="title" content="Aaron's Portfolio"/>
       <meta name="description" content="Hi, im Aaron, a front-end developer. Learn more about me and what i do."/>
 
