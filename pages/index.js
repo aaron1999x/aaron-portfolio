@@ -42,7 +42,6 @@ export default function Home() {
 
       <FooterCredit />
       </main>
-    </meta>
-    
+    </>
   )
 }
