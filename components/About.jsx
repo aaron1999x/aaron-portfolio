@@ -26,8 +26,7 @@ const tools = [
 
 const About = () => {
   return ( 
-    // remove temporary pb-24
-    <section className='mx-6 pb-24 lg:w-[800px] xl:w-[980px] lg:mx-auto lg:py-24'>
+    <section className=' mb-24 mx-6 lg:w-[800px] xl:w-[980px] lg:mx-auto lg:py-24 lg:mb-12'>
       <span className='text-4xl font-bold text-underline tracking-tighter lg:text-5xl text-white bg-secondaryLight dark:bg-secondaryDark'>About Me.</span>
       <p className='mt-4'>Hi there! I&apos;m Aaron, a front-end developer who&apos;s driven and passionate about learning new skills and growing through continuous personal and professional development. With almost close to 2 years of experience in web development, I enjoy creating engaging user experiences and bringing beautiful designs to life. When I&apos;m not coding, you can find me indulging in my hobbies of collecting watches and following the excitement of Formula 1 races. Let&apos;s connect and collaborate on creating amazing web experiences together!</p>
       <div className='flex items-center flex-wrap gap-8 mt-5 lg:mt-8 justify-center lg:justify-start lg:gap-10'>

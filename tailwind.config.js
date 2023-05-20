@@ -21,6 +21,7 @@ module.exports = {
         
         cardBackgroundLight:"#f2f4f6",
         cardBackgroundDark:"#fffffe",
+        cardParagraphDark:"#2e2f3e",
 
         buttonLight: "#00ebc7",
         secondaryLight:"#ff5470",

@@ -5,3 +5,14 @@
 * {
   box-sizing: border-box;
 }
+
+/* .test{
+  background: url('../public/images/infosearch-screenshot.png');
+  background-size: cover;
+  background-position: top;
+  transition: all 1s ease;
+}
+
+.test:hover{
+  background-position: bottom;
+} */
