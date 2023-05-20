@@ -9,7 +9,7 @@ export default{
       type:"Freelance",
       description:"This was my first freelance project. The goal was to redesign the client's old website into something clean and modern looking.",
       repoLink:"https://github.com/aaron1999x/infosearch-react",
-      deployLink:"https://infosearch-my.vercel.app/",
+      deployLink:"https://www.info-search.com.my/",
       tech:[
         "React",
         "Tailwind CSS"

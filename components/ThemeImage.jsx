@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import avatarLight from '../public/images/avatar-light.png'
 import avatarDark from '../public/images/avatar-dark-new.png'
-import avatarOriginal from '../public/images/avatar-original.png'
 
 function ThemedImage() {
   const { resolvedTheme } = useTheme()
