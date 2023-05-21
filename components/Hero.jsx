@@ -3,6 +3,7 @@ import ThemedImage from './ThemeImage'
 import { FaGithub, FaLinkedin, FaTwitter,FaFileDownload } from 'react-icons/fa';
 import SocialIcon from './SocialIcon';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 
 const Hero = () => {
@@ -14,11 +15,21 @@ const Hero = () => {
             <ThemedImage />
           </div>
           <div>
-            <h1 className='font-calsan text-headlineLight dark:text-headlineDark text-6xl lg:text-7xl'>Aaron Tan</h1>
-            <div className=' text-paragraphLight dark:text-paragraphDark text-base lg:text-xl '>
+            <motion.h1 className='font-calsan text-headlineLight dark:text-headlineDark text-6xl lg:text-7xl'
+              initial={{opacity:0,x:-50}}
+              animate={{opacity:1,x:0}}
+              transition={{duration:1,delay:0.4}}
+            >
+              Aaron Tan
+            </motion.h1>
+            <motion.div className=' text-paragraphLight dark:text-paragraphDark text-base lg:text-xl '
+              initial={{opacity:0,y:50}}
+              animate={{opacity:1,y:0}}
+              transition={{duration:1,delay:0.45}}
+            >
               <p>Front-end Developer based in Kuala Lumpur, Malaysia</p>
               <p>Currently @MirTech</p>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className='flex items-center mt-4 justify-between lg:justify-normal lg:gap-10 lg:-mt-10'>
@@ -28,10 +39,14 @@ const Hero = () => {
             <SocialIcon icon={<FaTwitter className='w-7 h-7 lg:w-8 lg:h-8' />} href='https://twitter.com/aarontanyeesing' />
           </div>
           <Link href='./ResumeMalaysia.pdf' target='_blank' className='hover:animate-pulse'>
-            <div className='flex items-center gap-2 bg-buttonLight text-buttonTextLight dark:bg-buttonDark dark:text-buttonTextDark p-2 rounded-lg'>
+            <motion.div className='flex items-center gap-2 bg-buttonLight text-buttonTextLight dark:bg-buttonDark dark:text-buttonTextDark p-2 rounded-lg'
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={e => {}}
+              onHoverEnd={e => {}}
+            >
               <FaFileDownload/>
               Resume
-            </div>
+            </motion.div>
           </Link>
           
 
