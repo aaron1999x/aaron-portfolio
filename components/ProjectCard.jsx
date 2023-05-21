@@ -9,7 +9,7 @@ const ProjectCard = ({image,title,type,description,repoLink,deployLink,tech,clas
   return (
     <div className={`${className} p-5 mb-6 flex flex-col items-center gap-6 rounded-lg bg-cardBackgroundLight dark:bg-cardBackgroundDark  lg:flex-row lg:gap-12 lg:p-8 `}>
       <div className='h-auto overflow-hidden rounded-md shadow-md lg:w-3/5'>
-        <Image quality={100} src={image} className='h-auto w-full object-top hover:object-bottom '/>
+        <Image quality={100} src={image} alt={title} className='h-auto w-full object-top hover:object-bottom '/>
       </div>
       <div className='flex flex-col justify-center lg:w-2/5'>
         <div className='flex flex-col items-start gap-2 mb-3'>
