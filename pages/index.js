@@ -9,6 +9,8 @@ import FooterCredit from '@/components/FooterCredit'
 import Script from 'next/script'
 import MetaHead from '@/components/MetaHead'
 import Projects from '@/components/Projects'
+import Experience from '@/components/Experience'
+import Contact from '@/components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 const calSans = localFont({
@@ -41,6 +43,8 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      {/* <Experience /> */}
+      <Contact />
       <FooterCredit />
       </main>
     </>
