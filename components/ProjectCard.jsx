@@ -12,8 +12,9 @@ const ProjectCard = ({image,title,type,description,repoLink,deployLink,tech,clas
         <Image quality={100} src={image} className='h-auto w-full object-top hover:object-bottom '/>
       </div>
       <div className='flex flex-col justify-center lg:w-2/5'>
-        <div className='flex flex-col gap-1 mb-3'>
-          <span className=' font-semibold text-secondaryLight dark:text-secondaryDark'>{type}</span>
+        <div className='flex flex-col items-start gap-2 mb-3'>
+          {/* <span className=' font-semibold text-secondaryLight dark:text-secondaryDark'>{type}</span> */}
+          <span className=' font-semibold inline-block rounded-lg px-3 bg-secondaryLight  text-white dark:bg-secondaryDark'>{type}</span>
           <span className='text-headlineLight font-bold text-2xl w-1/2 lg:w-4/5'>{title}</span>
         </div>
         <p className='mb-5 text-paragraphLight dark:text-cardParagraphDark'>
