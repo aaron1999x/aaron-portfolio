@@ -7,7 +7,7 @@ import {FiExternalLink} from 'react-icons/fi'
 
 const ProjectCard = ({image,title,type,description,repoLink,deployLink,tech,className=""}) => {
   return (
-    <div className={`${className} p-5 mb-6 flex flex-col items-center gap-6 rounded-lg bg-cardBackgroundLight dark:bg-cardBackgroundDark  lg:flex-row lg:gap-12 lg:p-8 lg:h-[400px]`}>
+    <div className={`${className} p-5 mb-6 flex flex-col items-center gap-6 rounded-lg bg-cardBackgroundLight dark:bg-cardBackgroundDark  lg:flex-row lg:gap-12 lg:p-8 `}>
       <div className='h-auto overflow-hidden rounded-md shadow-md lg:w-3/5'>
         <Image quality={100} src={image} className='h-auto w-full object-top hover:object-bottom '/>
       </div>

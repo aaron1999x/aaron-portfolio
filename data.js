@@ -7,7 +7,7 @@ export default{
       image:infosearch,
       title:"Infosearch Consultancy",
       type:"Freelance",
-      description:"This was my first freelance project. The goal was to redesign the client's old website into something clean and modern looking.",
+      description:"This project marked my debut as a freelance developer, and it presented an exciting opportunity to revamp the client's outdated website and transform it into a sleek, contemporary platform. The primary objective was to create a visually appealing and user-friendly interface that aligned with modern design principles.",
       repoLink:"https://github.com/aaron1999x/infosearch-react",
       deployLink:"https://www.info-search.com.my/",
       tech:[
