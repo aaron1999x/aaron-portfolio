@@ -20,7 +20,7 @@ const ProjectCard = ({image,title,type,description,repoLink,deployLink,tech,clas
         <p className='mb-5 text-paragraphLight dark:text-cardParagraphDark'>
           {description}
         </p>
-        <div className='mb-5 flex gap-2'>
+        <div className='mb-5 flex gap-2 flex-wrap'>
           {tech.map((tech,index)=>(
             <CardTag key={index} tech={tech} />
           ))}

@@ -1,8 +1,22 @@
 import infosearch from "./public/images/infosearch-website.png"
-import linktree from "./public/images/linktree-website.png"
+import linktree from "./public/images/linktree-website.png" 
+import behmor from "./public/images/behmor-website.png"
 
 export default{
   data:[
+    {
+      image:behmor,
+      title:"Behmor Coffee Roaster",
+      type:"Freelance",
+      description:"The Behmor Coffee Roaster Website is a simple and modern single landing page that I developed as a freelance project. It showcases the features and benefits of the Behmor Coffee Roaster, offering a user-friendly experience across various devices with its responsive layout and compelling call-to-action elements. The website provides detailed information about the product, including its specifications and roasting capabilities.",
+      repoLink:"https://github.com/aaron1999x/kodaft-behmor",
+      deployLink:"https://kodaft.com/behmorcoffeeroaster",
+      tech:[
+        "React",
+        "Tailwind CSS",
+        "Framer Motion"
+      ]
+    },
     {
       image:infosearch,
       title:"Infosearch Consultancy",
@@ -12,7 +26,8 @@ export default{
       deployLink:"https://www.info-search.com.my/",
       tech:[
         "React",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Framer Motion",
       ]
     },
     {
