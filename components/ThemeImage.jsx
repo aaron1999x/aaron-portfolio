@@ -5,6 +5,7 @@ import avatarLight from '../public/images/avatar-light.png';
 import avatarDark from '../public/images/avatar-dark-new.png';
 import avatarOriginal from '../public/images/avatar-original.png';
 import { motion } from 'framer-motion';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 function ThemedImage() {
   const { resolvedTheme } = useTheme();
@@ -28,7 +29,16 @@ function ThemedImage() {
   }
 
   if (!themeResolved) {
-    return <div>Loading...</div>; // You can use a loading state or a placeholder image here
+    return (
+      <div>
+        <Player 
+          src='https://assets4.lottiefiles.com/packages/lf20_rlzitsb5.json'
+          className="player"
+          loop
+          autoplay
+        />
+      </div>
+    )
   }
 
   return (
