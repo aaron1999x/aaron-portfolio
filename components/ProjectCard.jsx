@@ -1,7 +1,6 @@
 import React from 'react'
 import CardTag from './CardTag'
 import Image from 'next/image'
-import infosearch from '../public/images/infosearch-website.png'
 import {FaGithub} from "react-icons/fa"
 import {FiExternalLink} from 'react-icons/fi'
 
@@ -20,14 +19,14 @@ const ProjectCard = ({image,title,type,description,repoLink,deployLink,tech,clas
         <p className='mb-5 text-paragraphLight dark:text-cardParagraphDark'>
           {description}
         </p>
-        <div className='mb-5 flex gap-2'>
+        <div className='mb-5 flex gap-2 flex-wrap'>
           {tech.map((tech,index)=>(
             <CardTag key={index} tech={tech} />
           ))}
         </div>
         <div className='flex gap-5'>
-          <a href={repoLink} target='_blank'><FaGithub className='w-7 h-7' /></a>
-          <a href={deployLink} target='_blank'><FiExternalLink className='w-7 h-7' /></a>
+          <a className='hover:text-black ease duration-200' href={repoLink} target='_blank'><FaGithub className='w-7 h-7' /></a>
+          <a className='hover:text-black ease duration-200' href={deployLink} target='_blank'><FiExternalLink className='w-7 h-7' /></a>
         </div>
       </div>
     </div>
