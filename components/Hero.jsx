@@ -38,7 +38,8 @@ const Hero = () => {
             <SocialIcon icon={<FaLinkedin className='w-7 h-7 lg:w-8 lg:h-8'/>} href='https://www.linkedin.com/in/atys/' />
             <SocialIcon icon={<FaTwitter className='w-7 h-7 lg:w-8 lg:h-8' />} href='https://twitter.com/aarontanyeesing' />
           </div>
-          <Link href='./ResumeMalaysia.pdf' target='_blank' className='hover:animate-pulse'>
+
+          {/* <Link href='./ResumeMalaysia.pdf' target='_blank' className='hover:animate-pulse'>
             <motion.div className='flex items-center gap-2 bg-buttonLight text-buttonTextLight dark:bg-buttonDark dark:text-buttonTextDark p-2 rounded-lg'
               whileHover={{ scale: 1.2 }}
               onHoverStart={e => {}}
@@ -47,10 +48,17 @@ const Hero = () => {
               <FaFileDownload/>
               Resume
             </motion.div>
-          </Link>
-          
+          </Link> */}
 
-          
+          <Link href='./ResumeMalaysia.pdf' target='_blank'>
+            <div className='relative w-[100px] h-[40px] rounded-md bg-black dark:bg-white'>
+              <div className=' absolute w-[101px] h-[41px] -left-1.5 -top-1.5  z-10 flex items-center gap-2 bg-buttonLight text-buttonTextLight dark:bg-buttonDark dark:text-buttonTextDark p-2 rounded-md hover:left-0 hover:top-0 ease-in duration-100'>
+                <FaFileDownload/>
+                  Resume
+              </div>
+            </div>
+          </Link>
+        
         </div>
 
       </div>
