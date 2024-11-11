@@ -37,7 +37,12 @@ const Hero = () => {
               <p>
                 Currently{' '}
                 <span className="">
-                  <Link href={'https://www.jensi.io/'}>@Jensi</Link>
+                  <Link
+                    href={'https://www.theaccessgroup.com/en-my/'}
+                    target="_blank"
+                  >
+                    @The Access Group
+                  </Link>
                 </span>
               </p>
             </motion.div>
